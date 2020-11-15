@@ -15,7 +15,7 @@ export default function SearchEngine() {
     let urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=3a94f3778290bfeee61278505dbbe51d&units=metric`;
     axios.get(urlForecast).then(showForecast);
   }
-
+//today is fun
   function showTemperature(response) {
     setMessage(response.data.name);
     setTemperature(`${Math.round(response.data.main.temp)}ºC`);
